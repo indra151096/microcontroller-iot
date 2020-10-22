@@ -96,10 +96,6 @@ void loop() {
   }
 
   if (changeLedStatus) {
-    portENTER_CRITICAL(&gpioIntMux);
-    changeLedStatus = false;
-    portEXIT_CRITICAL(&gpioIntMux);
-
     autoBrightness = !autoBrightness;
     if (autoBrightness == LOW) {
       Serial.println("Auto Brightness: OFF");
@@ -107,7 +103,12 @@ void loop() {
     else {
       Serial.println("Auto Brightness: ON");
     }
-    
+
+    delay(200);
+
+    portENTER_CRITICAL(&gpioIntMux);
+    changeLedStatus = false;
+    portEXIT_CRITICAL(&gpioIntMux);
 
     writeEEPROMChar(EEPROM_ADDRESS_LED, autoBrightness);
     setIndicatorAutoBrightness(autoBrightness);
