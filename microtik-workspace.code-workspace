@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"name": "code-task-week1",
+			"path": "code-task-week1"
+		},
+		{
+			"name": "iot-task-2",
+			"path": "iot-task-2"
+		},
+		{
+			"name": "iot-task-3",
+			"path": "iot-task-3"
+		},
+		{
+			"name": "iot-task-4",
+			"path": "iot-task-4"
+		},
+		{
+			"path": "BLE"
+		},
+		{
+			"name": "iot-task5-1",
+			"path": "iot-task5-1"
+		},
+		{
+			"name": "iot-task-6",
+			"path": "iot-task-6"
+		},
+		{
+			"name": "iot-task-7",
+			"path": "iot-task-7"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"string": "cpp",
+			"random": "cpp",
+			"vector": "cpp"
+		}
+	}
+}
