@@ -30,6 +30,10 @@
 		{
 			"name": "iot-task-7",
 			"path": "iot-task-7"
+		},
+		{
+			"name": "iot-task-8",
+			"path": "iot-task-8"
 		}
 	],
 	"settings": {
